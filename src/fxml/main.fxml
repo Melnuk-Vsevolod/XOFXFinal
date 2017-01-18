@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="/css/MainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="78.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="76.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="446.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="500.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="500.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="b1" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" textAlignment="CENTER" />
+      <Button fx:id="b2" disable="true" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="1" />
+      <Button fx:id="b3" disable="true" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="2" />
+      <Button fx:id="b4" disable="true" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" GridPane.rowIndex="1" />
+      <Button fx:id="b5" disable="true" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="b6" disable="true" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button fx:id="b7" disable="true" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" GridPane.rowIndex="2" />
+      <Button fx:id="b8" disable="true" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="b9" disable="true" mnemonicParsing="false" onAction="#showDialog" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label fx:id="label" text="Label" GridPane.rowIndex="3" />
+      <Label fx:id="label1" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="btnRestart" mnemonicParsing="false" onAction="#Restart" opacity="0.68" prefHeight="45.0" prefWidth="76.0" rotate="24.4" styleClass="button-Restart" text="RESTART" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Line fx:id="lineHorisontal1" endX="290.0" opacity="0.43" startX="0.0" strokeWidth="11.0" visible="false"> </Line>
+      <Line fx:id="lineHorisontal2" endX="290.0" opacity="0.43" startX="0.0" strokeWidth="11.0" visible="false" GridPane.rowIndex="1" />
+      <Line fx:id="lineHorisontal3" endX="290.0" opacity="0.43" startX="0.0" strokeWidth="11.0" visible="false" GridPane.rowIndex="2" />
+      <Line fx:id="lineVertical1" endY="290.0" opacity="0.43" startX="0.0" strokeWidth="11.0" visible="false">
+         <GridPane.margin>
+            <Insets left="50.0" top="200.0" />
+         </GridPane.margin>
+      </Line>
+      <Line fx:id="lineVertical2" endY="290.0" opacity="0.43" startX="0.0" strokeWidth="11.0" visible="false" GridPane.columnIndex="1">
+         <GridPane.margin>
+           <Insets left="50.0" top="200.0" />
+         </GridPane.margin>
+      </Line>
+      <Line fx:id="lineVertical3" endY="290.0" opacity="0.43" startX="0.0" strokeWidth="11.0" visible="false" GridPane.columnIndex="2">
+         <GridPane.margin>
+           <Insets left="50.0" top="200.0" />
+         </GridPane.margin>
+      </Line>
+      <Line fx:id="LineDiagonal1" endX="300.0" endY="300.0" opacity="0.43" startX="0.0" strokeWidth="11.0" visible="false">
+         <GridPane.margin>
+            <Insets top="200.0" />
+         </GridPane.margin>
+      </Line>
+      <Line fx:id="LineDiagonal2" endX="300.0" endY="300.0" opacity="0.43" rotate="90.0" startX="0.0" strokeWidth="11.0" visible="false">
+         <GridPane.margin>
+            <Insets top="200.0" />
+         </GridPane.margin>
+      </Line>
+      
+      
+      
+      
+      <!-- <Line fx:id="LineDiagonal1" endX="300.0" endY="300.0"opacity="0.43" startX="0.0" strokeWidth="11.0" visible="true">
+         <GridPane.margin>
+            <Insets top="200.0" />
+         </GridPane.margin>
+      </Line>
+      <Line fx:id="LineDiagonal2" endX="0.0" endY="300.0"opacity="0.43" startX="300.0" strokeWidth="11.0" visible="true">
+         <GridPane.margin>
+            <Insets top="200.0" />
+         </GridPane.margin>
+      </Line> -->
+      <!--  Button fx:id="start" mnemonicParsing="false" onAction="#Begin" prefHeight="100.0" prefWidth="100.0" text="Button" GridPane.rowIndex="3" />-->
+   </children>
+</GridPane>
